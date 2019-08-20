@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    width: 400px;
+}
+
+h4 {
+    text-align: center;
+}
+
+div.booking-success {
+    color: #86BA90;
+}
