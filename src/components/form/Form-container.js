@@ -10,7 +10,9 @@ export default function FormConatiner(props) {
         },
         email: {
             value: ''
-        }
+        },
+        time: '',
+        day: ''
     })
 
     const handleChange = name => (e) => {
@@ -33,9 +35,11 @@ export default function FormConatiner(props) {
 
     const handleBooking = (e) => {
         e.preventDefault()
+
         if (formControls.email.value && formControls.name.value && selectedTime && selectedDay) {
-            console.log(formControls.email.value, formControls.name.value, selectedTime, selectedDay)
+            setFormControls({ ...formControls, time: selectedTime, day: selectedDay })
         }
+
         const times = document.getElementsByClassName('time-slot');
         for (let i = 0; i < times.length; i++) {
             if (times[i].classList.contains('active')) {
