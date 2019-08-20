@@ -49,14 +49,14 @@ export default function CalendarContainer(props) {
 
     return (
         <CalendarView
-        handleClick={handleClick}
-        getNextWeek={getNextWeek}
-        getPrevWeek={getPrevWeek}
-        today={today}
-        currentWeek={currentWeek}
-        week={week}
-        daysInWeek={daysInWeek}
-        weekdaysShort={weekdaysShort}
+            handleClick={handleClick}
+            getNextWeek={getNextWeek}
+            getPrevWeek={getPrevWeek}
+            today={today}
+            currentWeek={currentWeek}
+            week={week}
+            daysInWeek={daysInWeek}
+            weekdaysShort={weekdaysShort}
         />
     )
 }

@@ -56,13 +56,13 @@ export default function FormConatiner(props) {
     }
 
     return (
-        <FormView 
-        handleChange={handleChange} 
-        handleBooking={handleBooking} 
-        handleTime={handleTime}
-        selectedDay={selectedDay}
-        selectedTime={selectedTime}
-        formControls={formControls}
+        <FormView
+            handleChange={handleChange}
+            handleBooking={handleBooking}
+            handleTime={handleTime}
+            selectedDay={selectedDay}
+            selectedTime={selectedTime}
+            formControls={formControls}
         />
     )
 }

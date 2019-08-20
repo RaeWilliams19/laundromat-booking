@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CalendarView(props) {
     const { handleClick, getNextWeek, getPrevWeek, today, week, currentWeek, daysInWeek, weekdaysShort } = props;
-    
+
     return (
         <div className="calendar">
             <table>
