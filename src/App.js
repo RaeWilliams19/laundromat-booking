@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 
-import Calendar from './components/calendar/Calendar';
-import Form from './components/form/Form';
+import CalendarContainer from './components/calendar/Calendar-container';
+import FormConatiner from './components/form/Form-container';
 import laundry from './assests/images/laundry.png'
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
         <h5>John's Laundromat</h5>
       </header>
       <main>
-        <Calendar handleClick={handleClick} selectedDay={selectedDay} />
-        <Form selectedDay={selectedDay} />
+        <CalendarContainer handleClick={handleClick} selectedDay={selectedDay} />
+        <FormConatiner selectedDay={selectedDay} />
       </main>
     </div>
   );
